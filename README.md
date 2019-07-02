@@ -1,6 +1,7 @@
 Maven 多模块结构
 --------------------------
-    父模块
+    <!--父模块-->
+    
      <packaging>pom</packaging>
      <modules>
             <module>backend</module>
@@ -8,7 +9,7 @@ Maven 多模块结构
      </modules>
 Spring Initializr 创建backend模块
 --------------------------
-    添加 restful api
+    //添加 restful api
     @RestController
     public class HelloController {
         @GetMapping("/api/hello")
@@ -26,7 +27,8 @@ Spring Initializr 创建backend模块
 ###  安装axios，vue-axios
     npm install axios
     npm install vue-axios
-###封装axios
+    
+### 封装axios
     src目录下创建util、api文件夹
     http.js封装axios，
         处理axios中对请求拦截和响应拦截做处理
